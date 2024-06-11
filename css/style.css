@@ -1,22 +1,19 @@
 /* General Styles */
 
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Neutral light grey background */
-    color: #333;
+    background-color: lightgrey; /* Neutral light background */
+    color: black;
 }
 
 header {
-    background-color: #f4f4f4; /* Match body background */
-    color: #333;
-    padding: 1rem 0;
+    padding: 1rem  0;
     text-align: left; /* Left align text */
 }
 
-header .container {
+header .name {
     padding-left: 1rem; /* Add padding to the left for alignment */
 }
 
@@ -28,94 +25,31 @@ main {
     padding: 2rem 0;
 }
 
-.container {
+.section {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 1rem;
+    text-align: left;
 }
 
-section {
-    margin-bottom: 2rem;
-    text-align: left; /* Left align text */
-}
-
-h1, h3 {
-    color: #4A90E2; /* Cool blue color */
-}
-
-p {
-    margin: 1rem 0;
+.info {
+    max-width: 800px;
+    margin: 0;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 /* Section Specific Styles */
-#home {
-    background-color: #f4f4f4; /* Match body background */
-    color: #333;
-    padding: 2rem 0;
-    text-align: left; /* Left align text */
-}
 
-/* Portfolio Section */
-#portfolio .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the bubbles horizontally */
-}
-
-#portfolio .projects p, #portfolio .projects a {
-    background-color: #e0e0e0; /* Light grey color */
+.info p {
+    background-color: white;
     border-radius: 4px;
     padding: 1rem;
-    width: 95%; /* Full width inside the container */
-    max-width: 850px; /* Set a max-width to control the size */
-    text-align: left; /* Left align text inside the bubbles */
-    margin: 0.5rem 0; /* Margin for spacing between items */
-    color: #333; /* Dark grey text color */
-    text-decoration: none; /* Remove underline for links */
-    padding-left: 1rem; /* Add padding to the left for alignment */
+    width: 50%;
 }
 
-#portfolio .projects a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* About Section */
-#about .container .projects {
-    background-color: #e0e0e0; /* Light grey background */
-    border-radius: 4px;
-    width: 95%; /* Full width inside the container */
-    max-width: 850px; /* Set a max-width to control the size */
-    padding: 1rem;
-    color: #333; /* Dark grey text color */
-    text-align: left; /* Left align text */
-}
-
-/* Contact Section */
-#contact .container {
-    background-color: #e0e0e0; /* Light grey background */
-    border-radius: 4px;
-    padding: 1rem;
-    text-align: left; /* Left align text */
-    color: #4A90E2; /* Cool blue text color */
-}
-
-#contact a {
-    color: #333; /* Cool blue color for link */
-    text-decoration: none;
-}
-
-#contact a:hover {
+a:hover {
     text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #f4f4f4; /* Match body background */
-    color: #333;
-    text-align: left; /* Left align text */
-    padding: 1rem 0;
-    padding-left: 1rem; /* Add padding to the left for alignment */
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
