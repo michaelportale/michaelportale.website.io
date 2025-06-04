@@ -1,124 +1,147 @@
 <!DOCTYPE html>
-<br lang="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Portale</title>
+    <title>Michael Portale | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<br>
-<br>
-<br>
-
 <body>
-    <header>
-        <section id="home">
-            <div class="name">
-                <h1>Michael Portale</h1>
-            </div>
-        </section>
-    </header>
+    <div class="cursor"></div>
+    <div class="cursor-shadow"></div>
+
+    <nav>
+        <div class="nav-logo">MP</div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </nav>
 
     <main>
-        <section id="portfolio">
-            <div class="section">
-                <h3>Projects</h3>
+        <section id="home" class="section-full">
+            <div class="hero">
+                <h1 class="glitch-text">Michael Portale</h1>
+                <h2>Computer Science Student at Columbia University</h2>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
             </div>
-            <div class="info">
-                <p>Coming Soon</p>
-                <p>Coming Soon</p>
-                <p>Coming Soon</p>
-                <p><a href="https://github.com/michaelportale" target="_blank">GitHub</a></p>
-            </div>
-        </section>
-
-
-
-        <br>
-        <br>
-        <br>
-        <section id="about">
-            <div class="section">
-                <h3>About me</h3>
-            </div>
-            <div class="info">
-                <p>I am a rising junior at Columbia University studying Computer Science. I have a strong foundation in programming with a focus on Java, Python, HTML, CSS, and JavaScript.</p>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Scroll Down</p>
             </div>
         </section>
 
-        <br>
-        <br>
-        <br>
-        <section id="contact">
-            <div class="section">
-                <h3>Contact</h3>
+        <section id="about" class="section-full">
+            <div class="section-header">
+                <h2>About Me</h2>
             </div>
-            <div class="info">
-                <p>Email: mvp2137@columbia.edu</p>
-                <p><a href="https://www.linkedin.com/in/mportale/" target="_blank">LinkedIn</a></p>
-            </div>
-        </section>
-    </main>
-
-    <script src="js/script.js"></script>
-</body>
-
-
-
-<!--
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Portale - Personal Website</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <section id="home">
-            <div class="container">
-                <h1>Michael Portale</h1>
-            </div>
-        </section>
-    </header>
-
-    <main>
-        <section id="portfolio">
-            <div class="container">
-                <h3>Projects</h3>
-                <div class="projects">
-                    <p>Coming Soon</p>
-                    <p>Coming Soon</p>
-                    <p>Coming Soon</p>
-                    <a href="https://github.com/michaelportale" target="_blank">GitHub Profile</a>
-                </div>    
-            </div>
-        </section>
-       
-        <section id="about">
-            <div class="container">
-                <h3>About me</h3>
-                <div class="projects">
-                    <p>I am a rising junior at Columbia University studying Computer Science</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a rising senior at Columbia University studying Computer Science. I have a strong foundation in programming with a focus on Java, Python, TypeScript, HTML, CSS, and JavaScript. Some of my interests include web development, game development, and machine learning.</p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <div class="container">
-                <h3>Contact</h3>
-                <a href="pdfs/MichaelPortaleResume.pdf" target="_blank">View My Resume</a>
+        <section id="projects" class="section-full">
+            <div class="section-header">
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Snake Game</h3>
+                        <p>An interactive Snake game built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-actions">
+                            <button id="play-snake" class="btn btn-primary">Play Game</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="snake-game-container" class="game-container hidden">
+                    <div class="game-header">
+                        <h3>Snake Game</h3>
+                        <button id="close-game" class="btn-close" type="button" aria-label="Close game"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div id="snake-game"></div>
+                    <div class="game-controls">
+                        <p>Use arrow keys to move • SPACEBAR to restart</p>
+                        <div class="game-info">
+                            <span id="score">Score: 0</span>
+                            <span id="difficulty-display">Medium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>StrengthWise - Workout Trainer</h3>
+                        <p>A comprehensive fitness education platform with interactive quizzes, exercise database, and workout planning tools built with Flask and Python.</p>
+                        <div class="project-actions">
+                            <a href="https://workouttrainer.onrender.com/" class="btn btn-primary" target="_blank" rel="noopener">View StrengthWise</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-full">
+            <div class="section-header">
+                <h2>Contact</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>mvp2137@columbia.edu</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/mportale/" target="_blank" rel="noopener">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/michaelportale" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
+        <div class="footer-content">
             <p>&copy; 2024 Michael Portale. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/snake-game.js"></script>
 </body>
-</html>-->
+</html>
